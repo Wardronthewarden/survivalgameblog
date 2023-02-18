@@ -1,0 +1,11 @@
+{
+  "paragraphs": [
+    {
+      "id": 1,
+      "body": "This week has marked the start of the procedural terrain system. So far, I have only managed to implement a system for generating one chunk by itself, and it still has a few unresolved bugs, even though I managed to sort out the more serious ones, relating to the terrain tiles' rotation, that made everything look wrong.\n\nIt unfortunately seems I am already behind schedule. I am hoping that some of the items on my schedule will take a lot less time than initially thought, so that I can finish my part by next Wednesday (a complete terrain system for one biome, foliage not included) hand the rest of the terrain system to my programmer and can get on with designing and implementing the combat system. However it seems I have massively underestimated the time this current system will take to implement.",
+      "title": "Starting work on the chunk system",
+      "dateAdded": "2023/2/18",
+      "lastModified": "2023/2/18 1:46"
+    }
+  ]
+}
