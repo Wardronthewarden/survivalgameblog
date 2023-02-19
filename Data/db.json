@@ -6,6 +6,13 @@
       "title": "Starting work on the chunk system",
       "dateAdded": "2023/2/18",
       "lastModified": "2023/2/18 1:46"
+    },
+    {
+      "id": 2,
+      "body": "IT WORKS!! It took my last remaining sanity, but I have managed to make the chunks for my terrain generation work without any bugs. At least none that I encountered so far. It took a lot longer than I expected, but the hardest part is done. \n\nFor the first time since I have started working on this system, I feel really excited to continue developing it. Next up, I will be working on spawning multiple chunks at the same time, and generating them seamlessly along the border. And once that part is done, I can make a build out of the game that I can send to testers, to test the limitations of this implementation.\n\nMy main concerns at the moment, are that unreal can't really handle this many instances of the terrain tiles, although supposedly nanite is very good at solving this exact problem. I am also looking to test how much building the game improves the performance of my terrain generation, and if I run any problems while compiling blueprints down to C++. Hopefully, I will have a clearer answer to most of these questions over the course of the next week.",
+      "title": "Finishing the chunk",
+      "dateAdded": "2023/2/19",
+      "lastModified": "2023/2/19 3:9"
     }
   ]
 }

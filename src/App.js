@@ -12,6 +12,8 @@ function App() {
 
   const handleSubmit = (e)=> {
     if(!newPostTitle || !newPostBody) return;
+    const correctedBody = newPostBody.replace(/(\r\n|\r|\n)/g, '<br>')
+    setNewPostBody(correctedBody)
     addPost()
 
     setNewPostTitle('')
