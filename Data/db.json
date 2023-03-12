@@ -13,6 +13,13 @@
       "title": "Finishing the chunk",
       "dateAdded": "2023/2/19",
       "lastModified": "2023/2/19 3:9"
+    },
+    {
+      "id": 3,
+      "body": "My sanity has been truly put to the test. I have not posted in a while due to an issue with the blog app itself, so in a quick summary:\n\n-I have finished implementing terrain generation seamlessly using multiple chunks. It turned out to be extremely slow.\n\n-I started implementing new C++ classes to optimize the generation system. Unfortunately, due to some internal problem with unreal, my BP only project failed to compile all the changes when adding in C++ classes. This has lead to a total of 2 weeks of nothing but working out the issue.\n\n-After it was done, I implemented Multithreading into the game's blueprints, which did help a lot with performance.\n\nUnfortunately, both the chunk management system and the chunk generation still take a long time executing its function, so I will need to transfer a bit of the code into C++ to make the system a bit faster. I have started on the implementation today, and have learned a lot about Unreal's internal C++ scripting methods.",
+      "title": "Blueprint to C++",
+      "dateAdded": "2023/3/12",
+      "lastModified": "2023/3/12 1:29"
     }
   ]
 }

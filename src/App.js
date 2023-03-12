@@ -9,15 +9,18 @@ function App() {
   const [newPostTitle, setNewPostTitle] = useState([])
   const [newPostBody, setNewPostBody] = useState([])
   const [fetchError, setFetchError] =useState(null)
+  const [editBody, setEditBody] = useState('')
+  const [editTitle, setEditTitle] = useState('')
 
-  const handleSubmit = (e)=> {
+  const handleSubmit = async (e)=> {
     if(!newPostTitle || !newPostBody) return;
     const correctedBody = newPostBody.replace(/(\r\n|\r|\n)/g, '<br>')
     setNewPostBody(correctedBody)
-    addPost()
-
+    const success = await addPost()
+    if (success == null){
     setNewPostTitle('')
     setNewPostBody('')
+    }
 
   }
 
@@ -44,6 +47,11 @@ function App() {
     return editTime
   }
 
+  const handleEdit =(id)=>{
+      const editTime = getEditTime()
+      
+  }
+
   const addPost = async () => {
     const id = posts.length ? posts[posts.length - 1].id +1 : 1;
     const dateAdded = initPostDate()
@@ -68,6 +76,7 @@ function App() {
 
     const result = await apiRequest(API_URL, postOptions)
     if (result) setFetchError(result);
+    return result
   }
 
   useEffect(()=>{
@@ -77,7 +86,7 @@ function App() {
         if (!response.ok) throw Error('Did not receive expected data')
         const listPosts = await response.json()
         console.log(listPosts)
-        setPosts(listPosts)
+        setPosts(listPosts.reverse())
         setFetchError(null)
       }catch (err) {
         setFetchError(err.message)
