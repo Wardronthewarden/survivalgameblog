@@ -24,9 +24,16 @@
     {
       "id": 4,
       "body": "Today has been a fun day. I have started implementing a lot of what I have already done in Blueprints, into C++.\n\nThis has proven to be way more interesting, and surprisingly less challenging than I initially anticipated. I found a great tutorial series by (as far as I can tell) EpicGames themselves, and as a result, the terrain generation seems to be much faster!\n\nI'm going to have to try and implement as much of it as I can tomorrow. It looks like I'm already running out of time. At some point, I have to completely rewrite my schedule too.\n\nI have MASSIVELY underestimated the ttime it would take me to implement this system properly. But nothing to do now, but push forward.",
-      "title": "First Day of migration",
+      "title": "First Day of BP to C++ migration",
       "dateAdded": "2023/3/12",
       "lastModified": "2023/3/12 1:29"
+    },
+    {
+      "id": 5,
+      "body": "Yet another long development period has passed.\n\nI have been trying to implement the rest of the world generation system in C++ to keep my blueprints more organized (and most importantly performant). I expected it to go a bit smoother, now that I had the base of the system implemented.\n\nhowever...\n\nIt turns out even a decision so as little as using a TMap instead of a TArray in my code would prove to be a giant hurdle. I have spent the better half of these past few weeks because of an issue I'm still not certain about why, but segfaulted when I tried to access a key in a TMap.\n\nThe solution in the end was to just use an Array instead of a Map, which is annoying, but at least the editor no longer crashes every time I generate the world.\n\nI will go on to work on adding a height map, and foliage to my terrain next week. The reason being, this will put the game into a state that looks good enough to produce marketing material from it, and the work needed to be handled for these could also further my knowledge and portfolio as a technical artist.",
+      "title": "Finishing Blueprint to C++ migration",
+      "dateAdded": "2023/3/26",
+      "lastModified": "2023/3/26 11:27"
     }
   ]
 }
