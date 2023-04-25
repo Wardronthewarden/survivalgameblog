@@ -34,6 +34,12 @@
       "title": "Finishing Blueprint to C++ migration",
       "dateAdded": "2023/3/26",
       "lastModified": "2023/3/26 11:27"
+    },
+    {
+      "id": 6,
+      "body": "This past onth of development finally made it all feel worthwhile.\n\nIt has been a long, tireing journey, but we have it 90% done. Tile based generation. Gradient noise. Generating and deleting chunks programmatically while the player moves around. Back-tracking for WFC. It is beautiful.\n\nTurns out it is much easier to program a system if you truly understand the language you're using, its compiler, and the engine. I set out to create this project to challenge myself, and push myself to learn more both about C++, and procedural generation algorythm. And challenge me it did, and I am really glad for it. I am much closer to where I want to be as a programmer, compared to when I was starting on the project. Not only am I much more comfortable implementing complex systems, I have a much better understanding of computer science in general, and I was even capable to debug my code based solely on my knowledge on the C++ compiler and pointers.\n\nI am still a bit sad that the combined implementation for the terrain generation will most likely only be finished to the degree show, but considering the challenges I was facing earlier in development, I am happy with what I managed to achieve in this time.",
+      "dateAdded": "2023/4/24",
+      "lastModified": "2023/4/24 01:27"
     }
   ]
 }
